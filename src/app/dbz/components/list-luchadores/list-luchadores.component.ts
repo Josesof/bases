@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Character } from '../../interfaces/character.interface';
 
 @Component({
   selector: 'app-list-luchadores',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class ListLuchadoresComponent {
 
+  @Input()
+  public characterList: Character[] = [];
 }

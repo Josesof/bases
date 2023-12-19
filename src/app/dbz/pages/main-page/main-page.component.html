@@ -3,17 +3,13 @@
 
 <div class="row">
     <div class="col">
-        <app-list-luchadores></app-list-luchadores>
+        <!--Mandar desde el padre al hijo [atributos]-->
+        <app-list-luchadores [characterList]="characters"></app-list-luchadores>
 
     </div>
 
     <div class="col">
-        <app-add-luchador></app-add-luchador>
-    </div>
-
-    <div>
-
-       
-
+        <!--Mandar desde el hijo al padre (Eventos)-->
+        <app-add-luchador (onNewCharacter)="onNewCharacter($event)" ></app-add-luchador>
     </div>
 </div>
