@@ -4,7 +4,7 @@
 <div class="row">
     <div class="col">
         <!--Mandar desde el padre al hijo [atributos]-->
-        <app-list-luchadores [characterList]="characters"></app-list-luchadores>
+        <app-list-luchadores [characterList]="characters" (onDelete)="onDeleteCharacterById($event)"></app-list-luchadores>
 
     </div>
 

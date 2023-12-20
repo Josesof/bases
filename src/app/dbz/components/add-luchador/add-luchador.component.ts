@@ -17,15 +17,16 @@ export class AddLuchadorComponent {
     power: 0
   }
 
+  onDeletId(element: number) {
+
+  }
+
   emitCharacter():void {
 
      if (this.character.name.length === 0) return;
 
      this.onNewCharacter.emit(this.character);
-
-    console.log(this.character);
-    this.character.name = '';
-    this.character.power = 0;
+     
   }
 
 }
