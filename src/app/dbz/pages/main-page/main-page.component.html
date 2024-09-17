@@ -4,12 +4,12 @@
 <div class="row">
     <div class="col">
         <!--Mandar desde el padre al hijo [atributos]-->
-        <app-list-luchadores [characterList]="characters" (onDelete)="onDeleteCharacterById($event)"></app-list-luchadores>
+        <list-luchadores [characterList]="characters" (onDelete)="onDeleteCharacterById($event)"></list-luchadores>
 
     </div>
 
     <div class="col">
         <!--Mandar desde el hijo al padre (Eventos)-->
-        <app-add-luchador (onNewCharacter)="onNewCharacter($event)" ></app-add-luchador>
+        <add-luchador (onNewCharacter)="onNewCharacter($event)" ></add-luchador>
     </div>
 </div>
